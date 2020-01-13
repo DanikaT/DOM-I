@@ -76,3 +76,9 @@ console.log(ctaButtonText);
 
 ctaButtonText.textContent = siteContent.cta.button;
 
+//Middle image
+
+const middleImg = document.getElementById("middle-img");
+console.log(middleImg);
+
+middleImg.src = siteContent["main-content"]["middle-img-src"];
