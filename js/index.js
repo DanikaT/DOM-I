@@ -62,3 +62,11 @@ console.log(headerText);
 
 headerText.textContent = siteContent.cta.h1;
 
+//Code snippet img
+
+const codeSnippet = document.getElementById("cta-img");
+console.log(codeSnippet);
+
+codeSnippet.src = siteContent.cta["img-src"];
+
+
