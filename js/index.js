@@ -69,4 +69,10 @@ console.log(codeSnippet);
 
 codeSnippet.src = siteContent.cta["img-src"];
 
+//CTA button text
+
+const ctaButtonText = document.querySelector("button");
+console.log(ctaButtonText);
+
+ctaButtonText.textContent = siteContent.cta.button;
 
