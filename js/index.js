@@ -82,3 +82,21 @@ const middleImg = document.getElementById("middle-img");
 console.log(middleImg);
 
 middleImg.src = siteContent["main-content"]["middle-img-src"];
+
+//Main content Features heading
+const featuresHeading = document.createElement("h4");
+console.log(featuresHeading);
+
+featuresHeading.textContent = siteContent["main-content"]["features-h4"];
+
+const featuresText = document.createElement("p");
+console.log(featuresText);
+
+featuresText.textContent = siteContent["main-content"]["features-content"];
+
+const featuresContent = document.querySelector(".text-content");
+console.log(featuresContent);
+
+featuresContent.append(featuresHeading, featuresText);
+
+
