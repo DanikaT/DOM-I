@@ -83,7 +83,8 @@ console.log(middleImg);
 
 middleImg.src = siteContent["main-content"]["middle-img-src"];
 
-//Main content Features heading
+//Main content Features section
+
 const featuresHeading = document.createElement("h4");
 console.log(featuresHeading);
 
@@ -98,5 +99,24 @@ const featuresContent = document.querySelector(".text-content");
 console.log(featuresContent);
 
 featuresContent.append(featuresHeading, featuresText);
+
+//Main content about section
+
+const aboutHeading = document.createElement("h4");
+console.log(aboutHeading);
+
+aboutHeading.textContent = siteContent["main-content"]["about-h4"];
+
+const aboutText = document.createElement("p");
+console.log(aboutText);
+
+aboutText.textContent = siteContent["main-content"]["about-content"];
+
+const aboutContent = document.querySelector(".text-content");
+console.log(aboutContent);
+
+aboutContent.append(aboutHeading, aboutText);
+
+
 
 
