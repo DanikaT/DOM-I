@@ -83,39 +83,58 @@ console.log(middleImg);
 
 middleImg.src = siteContent["main-content"]["middle-img-src"];
 
-//Main content Features section
+//Main content
+const mainContent = document.querySelector(".main-content");
+console.log(mainContent);
 
-const featuresHeading = document.createElement("h4");
-console.log(featuresHeading);
+//Top content
+const topContent = document.querySelector(".top-content");
+console.log(topContent);
 
-featuresHeading.textContent = siteContent["main-content"]["features-h4"];
+//Text content
+const textContent = document.querySelectorAll(".text-content");
+console.log(textContent);
 
-const featuresText = document.createElement("p");
-console.log(featuresText);
+const textContentArray = Array.from(textContent);
+console.log(textContentArray);
 
-featuresText.textContent = siteContent["main-content"]["features-content"];
+//Text content h4
+const textContentH4 = document.querySelectorAll("h4");
+console.log(textContentH4);
 
-const featuresContent = document.querySelector(".text-content");
-console.log(featuresContent);
+const h4Array = Array.from(textContentH4);
+console.log(h4Array);
 
-featuresContent.append(featuresHeading, featuresText);
+textContentH4[0].textContent = siteContent["main-content"]["features-h4"];
+textContentH4[1].textContent = siteContent["main-content"]["about-h4"];
+textContentH4[2].textContent = siteContent["main-content"]["services-h4"];
+textContentH4[3].textContent = siteContent["main-content"]["product-h4"];
+textContentH4[4].textContent = siteContent["main-content"]["vision-h4"];
 
-//Main content about section
+//Text content p
+const textContentP = document.querySelectorAll("p");
+console.log(textContentP);
 
-const aboutHeading = document.createElement("h4");
-console.log(aboutHeading);
+const pArray = Array.from(textContentP);
+console.log(pArray);
 
-aboutHeading.textContent = siteContent["main-content"]["about-h4"];
+textContentP[0].textContent = siteContent["main-content"]["features-content"];
+textContentP[1].textContent = siteContent["main-content"]["about-content"];
+textContentP[2].textContent = siteContent["main-content"]["services-content"];
+textContentP[3].textContent = siteContent["main-content"]["product-content"];
+textContentP[4].textContent = siteContent["main-content"]["vision-content"];
 
-const aboutText = document.createElement("p");
-console.log(aboutText);
 
-aboutText.textContent = siteContent["main-content"]["about-content"];
 
-const aboutContent = document.querySelector(".text-content");
-console.log(aboutContent);
 
-aboutContent.append(aboutHeading, aboutText);
+
+
+
+
+
+
+
+
 
 
 
