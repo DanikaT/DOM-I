@@ -110,6 +110,8 @@ textContentH4[1].textContent = siteContent["main-content"]["about-h4"];
 textContentH4[2].textContent = siteContent["main-content"]["services-h4"];
 textContentH4[3].textContent = siteContent["main-content"]["product-h4"];
 textContentH4[4].textContent = siteContent["main-content"]["vision-h4"];
+textContentH4[5].textContent = siteContent["contact"]["contact-h4"];
+
 
 //Text content p
 const textContentP = document.querySelectorAll("p");
@@ -123,6 +125,14 @@ textContentP[1].textContent = siteContent["main-content"]["about-content"];
 textContentP[2].textContent = siteContent["main-content"]["services-content"];
 textContentP[3].textContent = siteContent["main-content"]["product-content"];
 textContentP[4].textContent = siteContent["main-content"]["vision-content"];
+textContentP[5].textContent = siteContent["contact"]["address"];
+textContentP[6].textContent = siteContent["contact"]["phone"];
+textContentP[7].textContent = siteContent["contact"]["email"];
+
+//Bottom content
+const bottomContent = document.querySelector(".bottom-content");
+console.log(bottomContent);
+
 
 
 
